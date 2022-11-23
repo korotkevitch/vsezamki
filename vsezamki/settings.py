@@ -30,7 +30,7 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'vsezamki.by', 'iko-studio.ru']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'zamki',
-    'captcha',
     'home',
     'service',
     'articles',
@@ -160,5 +159,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'production_media')
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-RECAPTCHA_PUBLIC_KEY = '6LdbmQkeAAAAADPuywAjtXN4u-Pd31SfkXBUAHxm'
-RECAPTCHA_PRIVATE_KEY = '6LdbmQkeAAAAAN2ZnJ3-PPe3VkZzScSbyd3AVjKm'
